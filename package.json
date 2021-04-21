@@ -1,0 +1,21 @@
+{
+  "name": "html5-css-boilerplate",
+  "version": "0.1.0",
+  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexlet-boilerplates/html-boilerplate.git"
+  },
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "htmlhint": "^0.14.2",
+    "stylelint": "^13.8.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "surge": "^0.21.7"
+  },
+  "author": "Nikita Mikhaylov",
+  "license": "ISC"
+}
