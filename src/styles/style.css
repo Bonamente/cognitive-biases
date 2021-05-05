@@ -1,1 +1,114 @@
 /** CSS STYLE **/
+html {
+  --white: #fff;
+  --semitransparent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --dark: #2a2626;
+  --semitransparent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --font-size-base: 16px;
+  --font-size-h1: 72px;
+  --font-size-h2: 60px;
+  --font-size-h3: 34px;
+  --font-size-h4: 14px;
+  --font-family-main: 'Open Sans', sans-serif;
+  --font-family-headings: 'Neucha', cursive;
+  --content-width: 1110px;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: OpenSans;
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: Neucha;
+  src: url(../assets/fonts/Neucha-Regular.ttf);
+}
+
+body {
+  margin: 0 auto;
+
+  color: var(--dark);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-main);
+  line-height: 1.6em;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: normal;
+  font-family: var(--font-family-headings);
+
+  line-height: 1.2em;
+}
+
+.heading-1 {
+  font-size: var(--font-size-h1);
+}
+
+.heading-2 {
+  font-size: var(--font-size-h2);
+}
+
+.heading-3 {
+  font-size: var(--font-size-h3);
+}
+
+.heading-4 {
+  font-size: var(--font-size-h4);
+  font-family: var(--font-family-main);
+  text-transform: uppercase;
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.color-semitransparent-white {
+  color: var(--semitransparent-white);
+}
+
+.color-light {
+  color: var(--light);
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-primary-dark {
+  color: var(--primary-dark);
+}
+
+.coor-dark {
+  color: var(--dark);
+}
+
+.color-semitransparent-dark {
+  color: var(--semitransparent-dark);
+}
+
+.color-brown {
+  color: var(--brown);
+}
+
+.color-blue {
+  color: var(--blue);
+}
+
+.container {
+  width: var(--content-width);
+  margin: 0 auto;
+  padding: 100px 0;
+}
