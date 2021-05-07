@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cognitive biases bonamente</title>
-
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="container">
-        <h1 class="heading-1"><span class="color-primary">Когнитивные искажения</span> в программировании</h1>
-        <img src="assets/images/main.png" aria-hidden="true" alt="">
+    <header class="relative bg-img">
+        <div class="container relative">
+            <h1 class="heading-1 mt-7 mb-95"><span class="color-primary">Когнитивные<br> искажения</span><br> в программировании</h1>
+            <img class="header-img absolute" src="assets/images/main.png" aria-hidden="true" alt="">
     
-        <div>
-            <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.</p>
-            <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
-            <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
-        </div>
-
-        <a href="#">подробнее</a>
+            <div class="container d-flex">
+                <div class="column mr-30">
+                    <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.</p>
+                </div>
+                <div class="column">
+                    <p class="mb-15">Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
+                    <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
+                    <a class="btn btn-primary mt-40" href="#biases">подробнее</a>
+                </div>                
+            </div>
+        </div>        
     </header>
 
     <main>
@@ -29,7 +33,7 @@
             <iframe aria-describedby="video-description" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" allowfullscreen></iframe>
         </section>
 
-        <div class="container">
+        <section class="container" id="biases">
             <nav>
                 <ul>
                     <li><h2 class="heading-2"><span class="color-primary">5 когнитивных искажений</span> о существовании которых стоит помнить</h2></li>
@@ -39,7 +43,6 @@
                             <h2 class="heading-2 color-primary">Эффект ИКЕА</h2>
                             <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
                         </a>
-
                     </li>
                     <li>
                         <a href="#premature-optimization">
@@ -47,15 +50,13 @@
                             <h2 class="heading-2 color-primary">Преждевременная оптимизация</h2>
                             <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
                         </a>
-
                     </li>
                     <li>
                         <a href="#recency-bias">
                             <span>3</span>
                             <h2 class="heading-2 color-primary">Искажение новизны</h2>
                             <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
-                        </a>
-                        
+                        </a>                        
                     </li>
                     <li>
                         <a href="#hyperbolic-discounting">
@@ -63,7 +64,6 @@
                             <h2 class="heading-2 color-primary">Гиперболическое обесценивание</h2>
                             <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
                         </a>
-
                     </li>
                     <li>
                         <a href="#planning-fallacy">
@@ -71,11 +71,10 @@
                             <h2 class="heading-2 color-primary">Ошибка планирования</h2>
                             <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
                         </a>
-
                     </li>
                 </ul>
             </nav>
-        </div>
+        </section>
 
         <section class="container">
             <h2 class="sr-only">Описание когнитивных искажений</h2>
