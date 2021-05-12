@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="relative bg-img">
+    <header class="relative bg-img bg-light">
         <div class="container relative">
             <h1 class="heading-1 mt-7 mb-95"><span class="color-primary">Когнитивные<br> искажения</span><br> в программировании</h1>
             <img class="header-img absolute" src="assets/images/main.png" aria-hidden="true" alt="">
     
-            <div class="container d-flex">
+            <div class="d-flex pt-100">
                 <div class="column mr-30">
                     <p>Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.</p>
                 </div>
@@ -27,53 +27,55 @@
     </header>
 
     <main>
-        <section class="container">
-            <h2 class="heading-2">Что же это такое, <span class="color-primary">когнитивные искажения?</span></h2>
-            <p id="video-description">Что такое когнитивные искажения. Petrovna Channel</p>
-            <iframe aria-describedby="video-description" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" allowfullscreen></iframe>
+        <section class="container text-center">
+            <h2 class="heading-2 mb-25">Что же это такое, <br> <span class="color-primary">когнитивные искажения?</span></h2>
+            <p id="video-description" class="mb-30">Что такое когнитивные искажения. Petrovna Channel</p>
+            <iframe class="video relative" aria-describedby="video-description" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" allowfullscreen></iframe>
         </section>
 
-        <section class="container" id="biases">
-            <nav>
-                <ul>
-                    <li><h2 class="heading-2"><span class="color-primary">5 когнитивных искажений</span> о существовании которых стоит помнить</h2></li>
-                    <li>
-                        <a href="#IKEA-effect">
-                            <span>1</span>
-                            <h2 class="heading-2 color-primary">Эффект ИКЕА</h2>
-                            <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#premature-optimization">
-                            <span>2</span>
-                            <h2 class="heading-2 color-primary">Преждевременная оптимизация</h2>
-                            <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#recency-bias">
-                            <span>3</span>
-                            <h2 class="heading-2 color-primary">Искажение новизны</h2>
-                            <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
-                        </a>                        
-                    </li>
-                    <li>
-                        <a href="#hyperbolic-discounting">
-                            <span>4</span>
-                            <h2 class="heading-2 color-primary">Гиперболическое обесценивание</h2>
-                            <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#planning-fallacy">
-                            <span>5</span>
-                            <h2 class="heading-2 color-primary">Ошибка планирования</h2>
-                            <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <section class="bg-primary-dark" id="biases">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><h2 class="heading-2"><span class="color-primary">5 когнитивных искажений</span> о существовании которых стоит помнить</h2></li>
+                        <li>
+                            <a href="#IKEA-effect">
+                                <span>1</span>
+                                <h2 class="heading-2 color-primary">Эффект ИКЕА</h2>
+                                <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#premature-optimization">
+                                <span>2</span>
+                                <h2 class="heading-2 color-primary">Преждевременная оптимизация</h2>
+                                <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#recency-bias">
+                                <span>3</span>
+                                <h2 class="heading-2 color-primary">Искажение новизны</h2>
+                                <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
+                            </a>                        
+                        </li>
+                        <li>
+                            <a href="#hyperbolic-discounting">
+                                <span>4</span>
+                                <h2 class="heading-2 color-primary">Гиперболическое обесценивание</h2>
+                                <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#planning-fallacy">
+                                <span>5</span>
+                                <h2 class="heading-2 color-primary">Ошибка планирования</h2>
+                                <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>            
         </section>
 
         <section class="container">
