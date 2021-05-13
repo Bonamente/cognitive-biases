@@ -4,6 +4,7 @@ html {
   --semitransparent-white: #d7ccc0;
   --light: #f5f4f0;
   --primary: #fe8a02;
+  --primary-hover: #ea7600;
   --primary-dark: #42413c;
   --dark: #2a2626;
   --semitransparent-dark: #908d8b;
@@ -44,6 +45,13 @@ p {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 /* POSITION & DISPLAY */
 
 .relative {
@@ -56,6 +64,10 @@ p {
 
 .d-flex {
   display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 /* TEXT */
@@ -93,6 +105,10 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.decoration-none {
+  text-decoration: none;
 }
 
 /* COLORS */
@@ -176,13 +192,14 @@ p {
 /* +++++++++++++++++++++++++++ */
 
 .container {
-  width: var(--content-width);
+  max-width: var(--content-width);
   margin: 0 auto;
   padding: 100px 0;
 }
 
 .btn {
   display: inline-block;
+
   box-sizing: border-box;
   width: 148px;
   height: 49px;
@@ -200,6 +217,10 @@ p {
   text-decoration: none;
 
   background-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
 }
 
 /* HEADER */
@@ -249,10 +270,78 @@ p {
 /* VIDEO SECTION */
 
 .video {
+  z-index: 10;
+
   width: 919px;
   height: 569px;
 
   border: none;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+/* NAVIGATION */
+
+.top-200 {
+  top: -200px;
+}
+
+.cards-wrapper {
+  margin-left: -30px;
+}
+
+.nav-heading {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+
+  font-weight: normal;
+  font-size: 52px;
+  font-family: var(--font-family-headings);
+  line-height: 62.4px;
+}
+
+.card {
+  flex: 1 0 350px;
+
+  max-width: 350px;
+
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.card-bg-light {
+  background-color: var(--light);
+}
+
+.card:hover:not(:first-of-type) {
+  background-color: var(--primary);
+}
+
+.card:hover:not(:first-of-type) * {
+  color: var(--white);
+}
+
+.card-link {
+  display: block;
+
+  padding: 24px;
+}
+
+.card-number {
+  display: inline-block;
+
+  margin-top: 4px;
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  font-family: var(--font-family-headings);
+  line-height: 1;
+}
+
+.card-title {
+  margin-bottom: 12px;
+
+  font-weight: normal;
+  font-family: var(--font-family-headings);
 }
