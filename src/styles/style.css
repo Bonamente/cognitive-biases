@@ -412,7 +412,8 @@ p {
   background-color: var(--primary);
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: var(--primary-hover);
 }
 
@@ -479,11 +480,13 @@ input {
   background-color: var(--light);
 }
 
-.card:hover:not(:first-of-type) {
+.card:hover:not(:first-of-type),
+.card:focus-within:not(:first-of-type) {
   background-color: var(--primary);
 }
 
-.card:hover:not(:first-of-type) * {
+.card:hover:not(:first-of-type) *,
+.card:focus-within:not(:first-of-type) * {
   color: var(--white);
 }
 
@@ -548,7 +551,8 @@ input {
   padding: 0;
 }
 
-.form-submit:hover {
+.form-submit:hover,
+.form-submit:focus {
   background-color: var(--primary-hover);
 }
 
