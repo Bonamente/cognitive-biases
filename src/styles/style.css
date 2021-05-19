@@ -82,7 +82,6 @@ p {
   font-weight: 700;
   font-size: var(--font-size-small-h3);
   font-family: var(--font-family-main);
-  text-transform: uppercase;
 }
 
 .text-center {
