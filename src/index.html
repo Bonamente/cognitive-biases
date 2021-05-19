@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="relative bg-img bg-light">
-        <div class="container pt-100 pb-100 relative">
+    <header class="relative overflow-hidden bg-img bg-light">
+        <div class="relative container pt-100 pb-100">
             <h1 class="heading-1 mt-7 mb-95">Когнитивные<br>искажения<br><span class="color-dark">в программировании</span></h1>
-            <img class="header-img absolute" src="assets/images/main.png" aria-hidden="true" alt="">
+            <img class="absolute header-img" src="assets/images/main.png" aria-hidden="true" alt="">
     
             <div class="d-flex pt-100">
                 <div class="column pr-20 mr-30">
@@ -210,32 +210,32 @@
         </section>        
     </main>
 
-    <footer class="container pt-100 pb-100">
-        <div>
-            <div>
-                <h2 class="heading-2">Хотите узнать больше? Подпишитесь на обновления</h2>
+    <footer>
+        <div class="container pt-100 pb-100">        
+            <div class="d-flex pt-40 pl-55 pr-55 pb-40 bg-primary-dark">
+                <div class="column mr-30">
+                    <h2 class="heading-2 footer-title pt-20">Хотите узнать больше?<br>Подпишитесь на обновления</h2>
+                </div>
+                <div class="column">
+                    <form class="footer-form" action="" method="post">
+                        <label for="input-mail">
+                            <p class="mb-10 color-white">Электронная почта</p>
+                        </label>
+                        <div class="d-flex">
+                            <input id="input-mail" class="form-input mb-5" type="text" placeholder="Ваша электронная почта">
+                            <button class="relative btn form-submit bg-primary" type="submit"><span class="sr-only">Отправить адрес Вашей почты</span></button>
+                        </div>
+                    </form>
+                    <p class="fs-12 color-white">Подписываясь, вы принимаете <a class="color-white" href="">правила сервиса</a></p>
+                </div>
             </div>
-            <div>
-                <form class="form">
-                    <label for="input-mail">
-                        <strong class="">Электронная почта</strong>
-                    </label>
-                    <div class="d-flex">
-                        <input type="text" placeholder="Ваша электронная почта" id="input-mail">
-                        <button type="submit"></button>
-                    </div>
-                </form>
-                <p>Подписываясь, вы принимаете <a class="" href="#">правила сервиса</a></p>
+
+            <div class="mt-60 pt-18 pb-40 fs-14 text-center color-black">
+                <p class="mb-15">© 2021 Bonamente</p>
+                <p class="mb-15">По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
+                <p><a href="https://ru.hexlet.io/">Курсы программирования Hexlet</a></p>
             </div>
         </div>
-
-        <div>
-            <p>© 2021 Bonamente</p>
-            <p>По материалам статьи <a class="" href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b">Yash Ranadive Cognitive Biases in Programming</a></p>
-            <p><a href="https://ru.hexlet.io/">Курсы программирования Hexlet</a></p>
-        </div>
-
     </footer>
-
 </body>
 </html>
