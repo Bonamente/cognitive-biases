@@ -1,13 +1,13 @@
 /** CSS STYLE **/
 html {
   --white: #fff;
-  --semitransparent-white: #d7ccc0;
+  --secondary-white: #d7ccc0;
   --light: #f5f4f0;
   --primary: #fe8a02;
   --primary-hover: #ea7600;
   --primary-dark: #42413c;
   --dark: #2a2626;
-  --semitransparent-dark: #908d8b;
+  --secondary-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
   --font-size-base: 16px;
@@ -41,57 +41,17 @@ body {
   line-height: 1.6;
 }
 
+/* TEXT */
+
+h1,
+h2,
+h3 {
+  color: var(--primary);
+}
+
 p {
   margin: 0;
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.sr-only {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  overflow: hidden;
-
-  white-space: nowrap;
-
-  border-width: 0;
-
-  clip: rect(0, 0, 0, 0);
-}
-
-/* POSITION & DISPLAY */
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.d-block {
-  display: block;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-/* TEXT */
 
 .heading-1,
 .heading-2,
@@ -137,55 +97,41 @@ ul {
   text-decoration: none;
 }
 
-/* COLORS */
-
-.color-white {
-  color: var(--white);
+.list-style-none {
+  list-style: none;
 }
 
-.color-semitransparent-white {
-  color: var(--semitransparent-white);
+/* POSITION & DISPLAY */
+
+.relative {
+  position: relative;
 }
 
-.color-light {
-  color: var(--light);
+.absolute {
+  position: absolute;
 }
 
-.color-primary {
-  color: var(--primary);
+.top--200 {
+  top: -200px;
 }
 
-.color-primary-dark {
-  color: var(--primary-dark);
+.d-flex {
+  display: flex;
 }
 
-.color-dark {
-  color: var(--dark);
+.d-block {
+  display: block;
 }
 
-.color-semitransparent-dark {
-  color: var(--semitransparent-dark);
-}
-
-.color-brown {
-  color: var(--brown);
-}
-
-.color-blue {
-  color: var(--blue);
-}
-
-/* BACKGROUNDS */
-
-.bg-primary-dark {
-  background-color: var(--primary-dark);
-}
-
-.bg-brown {
-  background-color: var(--brown);
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 /* MARGINS & PADDINGS */
+
+.m-0 {
+  margin: 0;
+}
 
 .mt-7 {
   margin-top: 7px;
@@ -235,6 +181,10 @@ ul {
   margin-right: 30px;
 }
 
+.p-0 {
+  padding: 0;
+}
+
 .pt-5 {
   padding-top: 5px;
 }
@@ -263,7 +213,101 @@ ul {
   padding-left: 10px;
 }
 
-/* +++++++++++++++++++++++++++ */
+/* COLORS */
+
+.color-white {
+  color: var(--white);
+}
+
+.color-secondary-light {
+  color: var(--secondary-white);
+}
+
+.color-light {
+  color: var(--light);
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-primary-dark {
+  color: var(--primary-dark);
+}
+
+.color-dark {
+  color: var(--dark);
+}
+
+.color-secondary-dark {
+  color: var(--secondary);
+}
+
+.color-brown {
+  color: var(--brown);
+}
+
+.color-blue {
+  color: var(--blue);
+}
+
+/* BACKGROUNDS */
+
+.bg-img::before {
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: "";
+}
+
+.bg-light::after {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--light);
+
+  content: "";
+}
+
+.bg-dark::after {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--brown);
+
+  content: "";
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+/* COMMON */
 
 .container {
   max-width: var(--content-width);
@@ -300,36 +344,9 @@ ul {
   background-color: var(--primary-hover);
 }
 
+/* ==================================================================================== */
+
 /* HEADER */
-
-.bg-img::before {
-  position: absolute;
-  z-index: -1;
-
-  width: 100%;
-  min-height: 929px;
-
-  background-image: url("../assets/images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  opacity: 0.1;
-
-  content: "";
-}
-
-.bg-light::after {
-  position: absolute;
-  top: 0;
-  z-index: -2;
-
-  width: 100%;
-  min-height: 929px;
-
-  background-color: var(--light);
-
-  content: "";
-}
 
 .header-img {
   top: 55px;
@@ -352,10 +369,6 @@ ul {
 }
 
 /* NAVIGATION */
-
-.top--200 {
-  top: -200px;
-}
 
 .cards-wrapper {
   margin-left: -30px;
