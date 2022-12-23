@@ -6,4 +6,4 @@ A simple non responsive landing page
 - **CSS3**
 - **Surge**
 
-[### Live demo](http://lyrical-able.surge.sh/) :eyes:
+[LIVE DEMO](http://lyrical-able.surge.sh/) :eyes:
