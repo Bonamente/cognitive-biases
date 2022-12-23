@@ -1,4 +1,11 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Bonamente/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Bonamente/layout-designer-project-lvl1/actions)
+# Cognitive-biases
+A simple non responsive landing page
+
+## Technologies
+- **HTML5**
+- **CSS3**
+- **Surge**
+
+[Live demo](http://lyrical-able.surge.sh/) :eyes:
 
 http://lyrical-able.surge.sh/
